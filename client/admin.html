@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <title>Админ-панель S</title>
+  <link rel="stylesheet" href="/style/admin.css">
+  <script src="/js/admin.js" defer></script>
+</head>
+<body>
+  <main class="admin-shell">
+    <header class="admin-header">
+      <div>
+        <p class="eyebrow">SYNAPSE · УПРАВЛЕНИЕ</p>
+        <h1>Админ-панель</h1>
+        <p class="subtitle">Управление аккаунтами и блокировками</p>
+      </div>
+      <a class="back-link" href="/index.html">← Вернуться в чаты</a>
+    </header>
+
+    <section class="admin-card" aria-labelledby="users-heading">
+      <div class="list-heading">
+        <div>
+          <h2 id="users-heading">Пользователи</h2>
+          <p id="users-count" class="muted">Загрузка списка…</p>
+        </div>
+        <input id="user-search" type="search" placeholder="Поиск по имени, email или ID" autocomplete="off">
+      </div>
+      <div id="admin-status" class="status" role="status" aria-live="polite"></div>
+      <div id="users-list" class="users-list"></div>
+    </section>
+  </main>
+</body>
+</html>
